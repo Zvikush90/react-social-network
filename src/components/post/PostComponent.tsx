@@ -413,7 +413,7 @@ export class PostComponent extends Component<IPostComponentProps, IPostComponent
           <Linkify properties={{ target: '_blank', style: { color: 'blue' } }}>
             {reactStringReplace(body, /#(\w+)/g, (match: string, i: string) => (
               <NavLink
-                style={{ color: 'green' }}
+                style={{ color: 'brown' }}
                 key={match + i}
                 to={`/tag/${match}`}
                 onClick={evt => {
